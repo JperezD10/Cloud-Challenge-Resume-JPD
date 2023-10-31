@@ -78,3 +78,13 @@ ul li {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.visitor-count-container {
+    font-size: 18px;
+    color: #ff4081;
+    margin-top: 20px;
+}
+
+#visitor-count {
+    font-weight: bold;
+    margin-left: 5px;
+}
