@@ -16,6 +16,12 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+    - name: Install Azure CLI Front Door Extension
+      run: |
+        az extension add --name front-door
+      # Continue the script even if the extension installation fails
+      continue-on-error: true
+
     # List the frontend endpoints for your Azure Front Door
     - name: List Frontend Endpoints
       run: |
